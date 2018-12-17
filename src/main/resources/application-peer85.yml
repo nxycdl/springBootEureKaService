@@ -1,0 +1,14 @@
+server:
+  port: 6801
+#eureka的配置
+eureka:
+  instance:
+    #注册中心IP
+    hostname: 192.168.200.85
+  client:
+    #如果是单机，那么不用被发现；
+    fetch-registry: true
+    #如果是单机，那么不用注册本身；
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://192.168.200.135:6802/eureka/,http://192.168.200.136:6803/eureka/

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: eureKaService
+  boot:
+    admin:
+      client:
+        url: http://192.168.200.135:7000
+  profiles:
+    active: peer112
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+     env:
+       enabled: true
