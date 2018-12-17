@@ -1,4 +1,4 @@
-# springBootEureKaService
+# springBootEureKaService集群版
 
 三台主机的集群Eureka 服务<br>
 需要注意的是配置文件里面 spring.boot.admin.client.url 地址和 eureka注册的集群地址,采用相互注册的方式<br>
